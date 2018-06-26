@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class Library {
 
-    private ArrayList<Book> stock;
     private int capacity;
+    private ArrayList<Book> stock;
 
-    public Library() {
-        this.stock = new ArrayList<>();
+    public Library(int capacity) {
         this.capacity = capacity;
+        this.stock = new ArrayList<>();
     }
 
     public int countBooks(){

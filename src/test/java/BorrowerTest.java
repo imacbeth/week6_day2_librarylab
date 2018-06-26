@@ -11,8 +11,8 @@ public class BorrowerTest {
 
     @Before
     public void before(){
-        book = new Book();
-        library = new Library();
+        book = new Book(GenreType.CRIME);
+        library = new Library(100);
         borrower = new Borrower();
         library.addBook(book);
     }
