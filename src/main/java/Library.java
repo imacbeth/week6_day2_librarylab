@@ -2,23 +2,23 @@ import java.util.ArrayList;
 
 public class Library {
 
-    private ArrayList<String> books;
+    private ArrayList<Book> stock;
     private int capacity;
 
-    public Library(ArrayList<String> books, int capacity) {
-        this.books = books;
+    public Library() {
+        this.stock = new ArrayList<>();
         this.capacity = capacity;
     }
 
     public int countBooks(){
-        return this.books.size();
+        return this.stock.size();
     }
 
-    public void addBook(String book) {
-        this.books.add(book);
+    public void addBook(Book book) {
+        this.stock.add(book);
     }
 
     public boolean hasSpace(){
-       return this.capacity >= books.size();
+       return this.capacity >= stock.size();
     }
 }

@@ -8,23 +8,23 @@ import static org.junit.Assert.assertEquals;
 public class LibraryTest {
 
     Library library;
+    Book book;
 
     @Before
     public void before(){
-        ArrayList<String> testBooks = new ArrayList<>();
-        testBooks.add("Harry Potter");
-        library = new Library(testBooks, 10);
+        library = new Library();
+        book = new Book();
     }
 
     @Test
     public void countBooksInLibrary(){
-        assertEquals(1, library.countBooks());
+        assertEquals(0, library.countBooks());
     }
 
     @Test
     public void canAddBookToLibrary(){
-        library.addBook("Oliver Twist");
-        assertEquals(2, library.countBooks());
+        library.addBook(book);
+        assertEquals(1, library.countBooks());
     }
 
     @Test
