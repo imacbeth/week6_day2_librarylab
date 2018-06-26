@@ -15,7 +15,9 @@ public class Library {
     }
 
     public void addBook(Book book) {
+        if(hasSpace()){
         this.stock.add(book);
+        }
     }
 
     public boolean hasSpace(){
