@@ -22,5 +22,11 @@ public class LibraryTest {
         assertEquals(1, library.countBooks());
     }
 
+    @Test
+    public void canAddBookToLibrary(){
+        library.addBook("Oliver Twist");
+        assertEquals(2, library.countBooks());
+    }
+
 
 }
