@@ -22,4 +22,10 @@ public class BorrowerTest {
         assertEquals(0, borrower.collectionCount());
     }
 
+    @Test
+    public void canAddBookToCollection(){
+        borrower.addBook(library);
+        assertEquals(1, borrower.collectionCount());
+    }
+
 }

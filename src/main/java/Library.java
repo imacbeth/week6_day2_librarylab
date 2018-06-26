@@ -23,4 +23,8 @@ public class Library {
     public boolean hasSpace(){
        return this.capacity >= stock.size();
     }
+
+    public Book removeBook(){
+        return this.stock.remove(0);
+    }
 }

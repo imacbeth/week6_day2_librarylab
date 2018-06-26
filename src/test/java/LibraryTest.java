@@ -32,5 +32,12 @@ public class LibraryTest {
         assertEquals(true, library.hasSpace());
     }
 
+    @Test
+    public void canLendBook(){
+        library.addBook(book);
+        library.removeBook();
+        assertEquals(0, library.countBooks());
+    }
+
 
 }
