@@ -1,0 +1,26 @@
+import org.junit.Before;
+import org.junit.Test;
+
+import java.util.ArrayList;
+
+import static org.junit.Assert.assertEquals;
+
+public class LibraryTest {
+
+    Library library;
+
+    @Before
+    public void before(){
+        ArrayList<String> testBooks = new ArrayList<>();
+        testBooks.add("Harry Potter");
+        library = new Library(testBooks);
+    }
+
+
+    @Test
+    public void countBooksInLibrary(){
+        assertEquals(1, library.countBooks());
+    }
+
+
+}
